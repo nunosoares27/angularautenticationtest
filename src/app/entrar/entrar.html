@@ -1,0 +1,14 @@
+ <div class="container">
+        <p>{{msg}}</p>
+      <div class="form-signin">
+        <h2 class="form-signin-heading">Login</h2>
+        <label for="inputEmail" class="sr-only">E-mail</label>
+        <input type="email" [(ngModel)]="usuario.email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Senha</label>
+        <input type="password" [(ngModel)]="usuario.senha" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+        </div>
+        <button (click)="login()" class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+      </div>
+
+    </div>

@@ -1,0 +1,16 @@
+ <div class="container">
+      <p>{{msg}}</p>
+      <div class="form-signin">
+        <h2 class="form-signin-heading">Registar</h2>
+        <label for="inputName" class="sr-only">Nome</label>
+        <input type="text" [(ngModel)]="cadastro.nome" id="inputName" class="form-control" placeholder="Nome" required autofocus>
+        <label for="inputEmail" class="sr-only">E-mail</label>
+        <input type="email"  [(ngModel)]="cadastro.email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Senha</label>
+        <input type="password" [(ngModel)]="cadastro.senha" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+        </div>
+        <button (click)="addCadastro()" class="btn btn-lg btn-primary btn-block" type="submit">Registar</button>
+      </div>
+
+    </div>
