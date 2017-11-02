@@ -8,12 +8,37 @@
   </li>
 </ul>-->
 
-<!-- <input [(ngModel)]="filterText" placeholder="search text goes here"> -->
+ <input [(ngModel)]="filterText" placeholder="search text goes here"> 
 
 <!-- btn btn-lg btn-primary btn-block -->
 
 <input type="checkbox" (click)="getMale()" class="" />Male
 <input type="checkbox" (click)="getFemale()" class=""/>Female
+
+
+<div *ngIf="filterText.length == 0">
+
+<ul>
+<li *ngFor="let d of fakeData">
+    {{d.first_name}} {{d.last_name}} - {{d.gender}}
+  </li>
+
+</ul> 
+
+ </div>   
+
+<div *ngIf="filterText.length !== 0">
+<ul>
+
+<li *ngFor="let d of fakeData | filterByName : filterText">
+    {{d.first_name}} {{d.last_name}} - {{d.gender}}
+  </li>
+
+</ul>
+
+</div>
+
+<!--
 
 <div *ngIf="isMale">
 <ul>
@@ -35,7 +60,7 @@
   </li>
 
 </ul>
-</div>
+</div>-->
 
 <!--<ul>
 

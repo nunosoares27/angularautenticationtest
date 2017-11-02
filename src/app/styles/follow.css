@@ -1,0 +1,447 @@
+.globalFollow {
+    margin-top: 80px !important;
+}
+.globalFollowTitle {
+    width: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.globalFollow h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #555;
+    margin: 20px 0 35px 0;
+    display: inline-block;
+}
+.bgIconFollow {
+    padding-right: 10px;
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 35px;
+}
+/* navigation */
+
+.levelFollow {
+    float: left;
+    background-color: #ddd;
+    padding: 2px 6px;
+    font-size: 0.9em;
+    color: #444;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.sepLevel {
+    float: left;
+    margin: 0 3px;
+    color: #999;
+}
+/* block */
+
+.blockFollow {
+    background-color: #fff;
+    padding: 5px;
+    width: 301px;
+    height: 141px;
+    float: left;
+    margin: 0 5px 5px 0 !important;
+    box-sizing: border-box;
+}
+.blockFollowName {
+    height: 6.3em;
+}
+.blockFollow h3 {
+    font-weight: 600;
+    color: #444;
+    margin: 0 2%;
+    font-size: 1.1em;
+    max-height: 5.5em;
+}
+.blockFollow .btn_follow,
+.blockFollow .btn_following,
+.blockFollow .btn_unfollow,
+.blockActorFollow .btn_follow,
+.blockActorFollow .btn_following,
+.blockActorFollow .btn_unfollow {
+    height: 28px;
+}
+.followLine .toolFollowLine .btn_follow,
+.followLine .toolFollowLine .btn_following,
+.followLine .toolFollowLine .btn_unfollow {
+    height: 25px;
+}
+.blockActorFollow {
+    height: 105px;
+    width: 300px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 6px 6px 0;
+    position: relative;
+}
+.blockActorFollow .actorInfo {
+    height: 105px;
+    width: 300px;
+}
+.blockActorFollow .actorInfo h2 {
+    font-size: 1em;
+    line-height: 19px;
+    margin: 0 1% 10px 1%;
+    max-height: 3.5em;
+    display: -webkit-box;
+}
+.blockActorFollow .actorInfo h4 {
+    font-size: 0.8em;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 5px 2px 5px;
+}
+/* actor list details */
+
+.toolFollowActor {
+    text-align: left;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: -140px;
+    float: left;
+    font-size: 0.9em;
+}
+/* IE */
+
+html[data-useragent*='MSIE 10.0'] .toolFollowActor {
+    margin-left: 8px;
+    margin-top: -28px;
+}
+html[data-useragent*='rv:11.0'] .toolFollowActor {
+    margin-left: 8px;
+    margin-top: -28px;
+}
+/* no logo */
+
+.toolFollowActorNOLOGO {
+    margin-top: 73px !important;
+}
+.actorFollowInfo {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 300px;
+    height: 105px;
+}
+.actorFollowInfo h2 {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.1em;
+    float: none !important;
+    width: 98%;
+    margin: 20px auto 0 auto;
+    word-wrap: break-word;
+}
+.actorFollowInfo span {
+    color: #fff;
+    font-size: 0.85em;
+    padding: 2px 5px;
+    font-weight: 600;
+}
+/* btn follow */
+
+.btn_follow {
+    background-color: #ddd;
+    border: 2px #ddd solid;
+    color: #333;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.btn_following {
+    background-color: #DF9C00;
+    border: 2px #DF9C00 solid;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.btn_unfollow {
+    background-color: #ddd;
+    border: 2px #ddd solid;
+    color: #333;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.btn_follow:hover,
+.btn_following:hover,
+.btn_unfollow:hover {
+    opacity: 1 !important;
+}
+.blockFollow i {
+    float: right;
+    width: 30px;
+    text-align: center;
+    height: 23px;
+    margin-left: 5px;
+    padding-top: 5px;
+    color: #888;
+    cursor: pointer;
+}
+.blockFollow i:hover {
+    background-color: #f3f3f3;
+}
+.footerFollow {
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    background-color: rgb(51, 51, 51);
+    z-index: 999;
+    padding: 9px 2% 5px 2%;
+    width: 96%;
+    text-align: right;
+}
+.footerFollow .btn_following {
+    font-size: 1em;
+}
+.footerFollowPosition {
+    bottom: 45px !important;
+}
+/* user follow */
+
+.followLine {
+    background-color: #fff;
+    padding: 3px 5px;
+    height: 30px;
+    width: 596px;
+    margin: 0 5px 5px 0;
+    float: left;
+    display: inline-block;
+}
+.followLine h3 {
+    width: 80%;
+    float: left;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 5px 0 0 3px;
+    cursor: pointer;
+}
+.globalFollow .tabList {
+    width: 33%;
+    border: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+    text-align: center;
+    color: #999;
+}
+.globalFollow .tabList:hover {
+    background-color: #ddd;
+}
+.globalFollow .tabList h1 {
+    margin: 0 0 0 5px;
+    font-size: 20px;
+    color: #999;
+    display: inline-block;
+}
+.globalFollow .tabListACT {
+    border-bottom: 3px #ffc517 solid;
+    background-color: transparent !important;
+    display: inline-block;
+    color: #df9c00 !important;
+}
+.globalFollow .tabListACT h1 {
+    color: #DF9C00;
+}
+.toolFollowLine {
+    text-align: right;
+    float: right;
+    width: auto;
+    margin-top: 3px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+.searchFollow {
+    margin: 15px auto 0 auto;
+    width: 50%;
+}
+.searchFollow .iconSearch {
+    margin: 5px 9px;
+    font-size: 1.2em;
+}
+.searchFollow input[type="text"] {
+    padding: 0 30px;
+    width: 420px;
+    font-size: 0.9em;
+    float: left;
+    height: 38px;
+    margin: 0px;
+    border: 2px #ffc517 solid;
+}
+.searchFollow .activeSearch {
+    padding: 0 30px !important;
+}
+.searchFollow .cleanSearch {
+    margin: 5px 0 0 -33px;
+    padding: 5px;
+    text-align: center;
+}
+.searchFollow button.btn_submit {
+    float: left;
+    font-size: 0.9em;
+    margin: 0 0 0 5px;
+    height: 38px;
+    min-width: 120px;
+}
+.searchFollow .error {
+    color: #fe653e;
+}
+/* others pages */
+
+.brick_nameFollow {
+    width: 75% !important;
+}
+.landFollow {
+    display: inline-block;
+    font-size: 0.8em;
+}
+.bricks_left a:hover,
+.bricks_right a:hover {
+    text-decoration: none;
+}
+.followListSearch {
+    position: absolute;
+    float: left;
+    z-index: 9;
+    top: 76px;
+    left: 5px;
+    font-size: 0.9em;
+}
+/* search follow */
+
+.popupFollow h2 {
+    margin: -10px 0 10px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+.popupLineLang {
+    width: 600px !important;
+}
+.popupLineLang .row_filter {
+    margin-top: 15px !important;
+}
+.lineLang {
+    float: left;
+    width: 100%;
+    border-top: 1px #f3f3f3 solid;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.lineLang:hover {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+}
+.lineLang p {
+    float: left;
+    margin: 5px!important;
+    font-weight: 400 !important;
+    font-size: 1em !Important;
+}
+.lineLang span {
+    float: left;
+    color: #fe653e;
+    margin: 5px;
+    font-weight: 600;
+}
+.lineLang i {
+    float: right;
+    margin: 10px;
+    color: #999;
+}
+.lineBrickCae {
+    float: left;
+    box-sizing: border-box;
+}
+.lineBrickCae i {
+    color: #888;
+    font-size: 0.6em;
+    float: left;
+    margin: 10px 5px 0 0;
+}
+.showAllCaes {
+    margin-bottom: 15px;
+    float: left;
+    width: 98%;
+}
+.lineBrickCae .caeLevel1 {
+    background-color: #777;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+.lineBrickCae .caeName {
+    background-color: #ebebeb;
+    text-align: left;
+}
+.navPopupBrickCae {
+    padding: 0 0 10px 0;
+}
+.navPopupBrickCae i {
+    border: 1px #ccc solid;
+    padding: 5px;
+    font-size: 0.9em;
+    color: #666;
+    cursor: pointer;
+}
+.navPopupBrickCae i:hover {
+    background-color: #ccc;
+}
+.navPopupBrickCae span {
+    padding: 0 3px;
+    font-weight: 500;
+}
+.lineBrickCae .landFollow {
+    width: 16%;
+    float: left;
+    margin: 1px 0 0 3px;
+}
+.lineBrickCae .landFollow button {
+    padding: 3px 6px;
+    font-size: 0.8em;
+    margin: 2px 0 0 0;
+}
+.lineCaeActive .caeName {
+    border: 1px #ffc517 solid !important;
+    background-color: #f3f3f3 !important;
+}
+.lineCaeActive i {
+    color: #ffc517 !important;
+}
+/* popup search */
+
+.lineFollowCaeGpc button {
+    cursor: default !important;
+    text-align: left;
+    float: left;
+    max-width: 80%;
+    padding: 5px 8px;
+}
+.lineFollowCaeGpc button:hover {
+    opacity: 1 !important;
+}
+.moreInfo_actor .viewDetails {
+    margin-right: 5px;
+    padding: 5px 8px;
+}
+/* load more info */
+
+.loadFollowList {
+    width: 100%;
+    margin-left: 0;
+}
+/* level seleted */
+
+.followOn {
+    outline: 1px #df9c00 solid;
+}
+.followOn i {
+    color: #df9c00;
+}
+/* select category */
+
+.selectCatPos {
+    margin-bottom: 60px !important;
+}

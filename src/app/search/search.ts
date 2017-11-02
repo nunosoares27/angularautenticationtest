@@ -9,16 +9,19 @@ import { Component } from '@angular/core';
 
 export class searchComponent {
 
+filterText = '';
 isMale:boolean = false;
 isFemale:boolean = false;
 
 getMale(){
-  this.isFemale = false;
+  this.filterText = 'Male';
+  this.isFemale = !this.isFemale;
   this.isMale = !this.isMale;
 }
 
 getFemale(){
-    this.isMale = false;
+    this.filterText = 'Female';
+    this.isMale = !this.isMale;
     this.isFemale = !this.isFemale;
 }
 

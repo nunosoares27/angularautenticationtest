@@ -1,0 +1,879 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* VALIDATIONS ---> forms */
+
+/* error inputs */
+
+.error {
+  font-size: 0.75em;
+  margin: 3px 0 0 0;
+  color: #F29049;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  line-height: 16px;
+  float: left;
+}
+
+.error_input {
+  box-shadow: -1px -1px #e10000, 1px 1px #e10000;
+}
+
+/* error inputs */
+
+.warning {
+  font-size: 0.75em;
+  margin: 3px 0 0 0;
+  color: #f3c53e;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  line-height: 16px;
+  float: left;
+}
+
+/* popup price table */
+
+.warningPrice {
+  padding: 3px 0;
+  margin: -15px 0 0 0;
+  position: absolute;
+  background-color: #ffe38f;
+  width: 796px;
+  z-index: 99;
+  margin-left: -8px;
+  padding-left: 5px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.pswarningPrice {
+  margin-top: -23px!important;
+}
+
+.registerLandingError {
+  /* height: 10px;*/
+  float: left;
+}
+
+.borderWarning {
+  -ms-box-shadow: 0px 0px 0px 2px #f3c53e inset !important;
+  -o-box-shadow: 0px 0px 0px 2px #f3c53e inset !important;
+  box-shadow: 0px 0px 0px 2px #f3c53e inset !important;
+}
+
+/* min width for scroll x*/
+
+.message_error {
+  background-color: #ffe38f;
+  width: 100%;
+  min-width: 1225px;
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  }
+
+.message_error .iconOK_message i{
+  font-size: 1.2em;
+  position: relative;
+  top: 1px;
+}
+
+.message_error .close_message button.btn_submit{
+  margin: -5px;
+  font-size: .9em;}
+
+.message_sucess {
+  background-color: #A3D35E;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.message_loading {
+  background-color: #ddd;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.message_noContent {
+  background-color: #FFF;
+  width: 97%;
+  display: inline-block;
+  padding: 10px 0;
+  margin: 10px 0 0 12px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px #dadada solid;
+}
+
+.message_noContent2 {
+  width: 94% !important;
+  margin: auto !important;
+  padding: 10px 1% !important;
+}
+
+.message_destination {
+  background-color: #FFF;
+  width: 90%;
+  display: inline-block;
+  padding: 10px;
+  margin: 6px 0 0 8px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px #dadada solid;
+}
+
+.messageInfo{
+  display: inline-block;
+  width: auto;
+  margin-top: 2px;
+}
+
+.message_info_btn {
+  background-color: #999 !important;
+  color: #fff !important;
+  font-weight: 600;
+  float: none !important;
+  padding: 5px !important;
+  margin: -2px 0 5px 5px !important;
+}
+
+.informative_message {
+  font-size: 12px;
+  float: left;
+  color: #fff;
+  margin:1px 0 0 0; 
+  width: 100%;
+  text-align: left;
+}
+
+
+/* POP-UP */
+
+.alert_dialog {
+  box-sizing: border-box;
+  padding: 0 5%;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+
+.transparency,
+.alert_dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999999 !important;
+  cursor: default;
+}
+
+.alert_dialog .alert_window {
+  -webkit-transform: translate3d(0,0,0);
+  padding: 20px 15px;
+  text-align: center;
+  background: #333;
+  box-shadow: 0 0 8px rgba(0,0,0,0.75);
+  -khtml-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  width: 40%;
+  margin-left: 30%;
+  padding-bottom: 30px;
+  margin-top: 100px;
+}
+
+.alert_dialog .alert_window p {
+  margin-bottom: 15px;
+  color: #fff;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* POPUP MESSAGES */
+.transparency,
+.popup_messager {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999999 !important;
+  cursor: default;
+}
+
+.window_popup_messager {
+  margin: auto;
+  background: #fff;
+  min-height: 150px;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.2);
+  width: 400px;
+  }
+
+.window_popup_messager p {
+  font-weight: 600;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.window_popup_messager span {
+  font-weight: 600;
+}
+
+.content_message {
+  color: #333;
+  margin-top: 10px;
+  height: auto;
+  line-height: 20px;
+}
+
+.content_message p {
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.area_buttons_message {
+  display: inline-block;
+  width: 99%;
+  margin-top: 10px;
+}
+
+.buttons_message {
+  display: inline;
+  margin-left: 10px;
+}
+
+.checkbox_buttons_message {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.positionLeft {
+  float: left !important;
+}
+
+.positionRight {
+  float: right !important;
+}
+
+/* POPUP: price table */
+
+.popup01 {
+  min-height: 327px;
+  width: 800px;
+  max-height: 85vh;
+}
+
+.popup01 .closed_popup {
+  margin-top: -9px;
+}
+
+.popup01 p {
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.popup01 h1 {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.popup01 .required p {
+  font-size: .9em;
+  font-weight: 400;
+  color: #666;
+}
+
+/* POPUP: confirm the state of the public price list*/
+
+.popup02,
+.popup03 {
+  min-height: 150px;
+  width: 400px;
+  max-height: 400px;
+}
+
+.popup02 .align,
+.popup03 .align {
+  text-align: center;
+  height: 4em;
+}
+
+.popup02 b {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #333;
+  line-height: 20px;
+}
+
+.popup02 .btn_reset,
+.popup03 .btn_reset {
+  margin-right: 5px;
+  background-color: #E0E0E0;
+  font-weight: 600;
+  color: #000;
+  float: none;
+}
+
+.popup02 .button_cancel {
+  margin-right: 5px;
+}
+
+.popup02 .btn_submit,
+.popup03 .btn_submit {
+  float: none;
+}
+
+.popup02 .button_submit,
+.popup02 .button_reset,
+.popup03 .button_submit,
+.popup03 .button_reset {
+  padding: 6px 8px;
+  margin-bottom: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.popup02 .button_submit,
+.popup03 .button_submit {
+  margin: 0 5px;
+  float: none;
+  font-weight:600;
+}
+
+.popup02 .button_reset,
+.popup03 .button_reset {
+  float: none;
+  background-color: #f3f3f3;
+}
+
+/* POPUP CHANGED or DELETE CONTENT */
+
+.popup03 {
+  width: 500px;
+}
+
+.popup03 b {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  line-height: 25px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.popup03 h1 {
+  font-size: 1.4em;
+  margin: 0 0 20px 0;
+}
+
+.popup03 h2 {
+  font-size: 1em;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+/* INLINE VALIDATIONS*/
+
+.iconOK_message {
+  color: #333;
+  display: inline;
+  margin-right: 5px;
+}
+
+/* loading catalog line */
+
+.div_message {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 11px;
+  position: fixed;
+  top: 55px;
+  z-index: 1000;
+  text-align: center;
+  z-index: 99999;
+}
+
+.div_message_menuActive {
+  height: auto;
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 11px;
+  text-align: center;
+  position: fixed;
+  top: 55px;
+  z-index: 9999;
+  padding-right: 2%;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.div_message_2 {
+  height: auto;
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 11px;
+  text-align: center;
+  position: fixed;
+  top: 91px;
+  width: 80%;
+  z-index: 9999;
+  padding-right: 2%;
+  margin-left: 20%;
+}
+
+.div_message_3 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 11px;
+  position: fixed;
+  top: 91px;
+  z-index: 9999;
+  text-align: center;
+}
+
+.content_p {
+  display: inline;
+  color: #555;
+  line-height: 6px;
+}
+
+.content_p p {
+  display: inline;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.close_message {
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  color: #333;
+  float: right;
+  margin:-3px 10px -8px 0;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.close_message:hover {
+  background-color: #ffc517;
+}
+
+.warning_buttons {
+  padding-top: 7%;
+  text-align: center;
+  margin: auto;
+}
+
+.button_submit, 
+.button_reset, 
+.button_cancel{
+  text-align: center;
+  font-size: 0.85em;
+  display: inline-block;
+  min-width: 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.button_submit {
+  background-color: #ffc517;
+  padding: 5px 0px;
+  float: right;
+  color: #333;
+}
+
+.button_reset {
+  background-color: #ebebeb;
+  padding: 5px 0px;
+  color: #333;
+}
+
+.button_cancel {
+  background-color: #ebebeb;
+  padding: 10px 5px;
+  font-size: 0.9em;
+  float: left;
+}
+
+/* PAGE 404 and DOMAIN UNAVAILABLE */
+
+.bodyError {
+  width: 100%;
+  height: calc(100vh - 20em);
+  padding: 10em 0;
+}
+
+.bodyError:after{
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  background-image: url(../images/centroproduto_fullsite.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.content_error {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  min-height: 350px;
+  background-color: rgba(255,255,255,0.8);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.noFound {
+  width: 92%;
+  text-align: center;
+  padding: 20px 4% 10px 4%;
+}
+
+/* domain active */
+
+.bodyError_domain {
+  padding-top: 5em !important;
+}
+
+.content_error_domain {
+  margin-bottom: 1em !important;
+}
+
+.noFound_domain {
+  padding: 40px 4% 40px 4% !important;
+}
+
+/* ------- */
+
+.noFound h1 {
+  color: #555;
+  font-size: 2em !important;
+  line-height: 45px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+.noFound h2 {
+  color: #777;
+  font-size: 1.2em !important;
+  font-weight: 600;
+  margin: 2em 0 0 0;
+  width: 100%;
+  display: inline-block;
+}
+
+.noFound h3 {
+  color: #777;
+  font-size: 1.1em;
+  margin: 5px auto 30px auto;
+  width: 100%;
+  display: inline-block;
+}
+
+.noFound h4 {
+  color: #777;
+  font-size: 1.1em;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.noFound h5 {
+  color: #777;
+  font-size: 0.85em;
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+.noFound .search_lp {
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  display: block;
+  position: relative;
+}
+
+.noFound .search_lp .searchGeral{position: relative;}
+.noFound .search_lp .searchGeral .cleanSearch{
+  margin: 0;
+  float: right !important;
+  position: absolute !important;
+  right: 58px;
+  z-index: 1;
+  top: 4px;
+  padding: 7px;}
+
+
+.noFound .iconSearch {
+  margin: 0;
+  right: 13px;
+  padding: 9px 12px;
+  background-color: #ffc517;
+  color: #333;
+}
+
+.noFound .iconSearch i {
+  top: -1px;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.noFound .search_lp .searchGeral input[type="text"] {
+  height: 40px;
+  width: 99%;
+  font-size: 0.9em;
+  border: 2px #ffc517 solid;
+  padding: 0 82px 0 10px;
+}
+
+/*
+.noFound .cleanSearch {
+  margin: 6px 0 0 -37px;
+}*/
+
+.noFound .search_lp .searchGeral button[type="button"] {
+  height: 37px;
+  min-width: 110px;
+  margin-top: 1px;
+}
+
+.noFoundBTN {
+  width: 100%;
+}
+
+.button_404 {
+  display: table;
+  margin: auto;
+}
+
+.button_404 button.btn_submit {
+  margin-left: 10px;
+  float: left;
+  padding: 8px 10px;
+  background-color: #ddd;
+}
+
+.button_404 p {
+  float: left;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.button_404 i {
+  padding: 3px 3px 0 0;
+  float: left;
+  margin-left: -2px;
+}
+
+.noFoundSub h5 {
+  margin: 0 0 5px 0;
+  font-size: 0.9em;
+  color: #999;
+}
+
+/* manager */
+
+.button_logout {
+  display: inline-block;
+  margin-top: 15px;
+  float: right;
+}
+
+/* POP UP HELP */
+
+.help_icon {
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 5px;
+  line-height: 0.875em !important;
+}
+
+.help_position .help_area {
+  margin: -34px 0 0 30px;
+  position: absolute;
+}
+
+.help_area {
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,.2);
+  position: relative;
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 3px;
+  font-family: inherit !important;
+}
+
+.help_area:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -12px;
+  border-style: solid;
+  border-width: 13px 12px 13px 0;
+  border-color: transparent #fff;
+  display: block;
+  width: 0;
+  z-index: 1;
+  font-family: inherit!important;
+}
+
+.help_area:before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -13px;
+  border-style: solid;
+  border-width: 13px 12px 13px 0;
+  border-color: transparent #ddd;
+  display: block;
+  width: 0;
+  z-index: 0;
+  font-family: inherit!important;
+}
+
+.help_area p {
+  font-size: 0.7em;
+  line-height: 18px;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  font-weight: 500;
+  font-family: inherit !important;
+}
+
+.help_icon_position_titleCatalog {
+  display: inline-block;
+  float: left;
+  margin: 17px 10px 0 0;
+}
+
+/* POP UP HELP TAB */
+
+.help_icon_tab {
+  color: #ccc;
+  cursor: pointer;
+  margin:0 0 5px 0;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.blockHelp {
+  width: 107%;
+  position: absolute;
+  top: -114px;
+  left: -24px;
+  height: 168%;
+}
+
+/* message position */
+
+.messagePosition .message_noContent {
+  margin: auto;
+  width: 99% !important;
+  box-sizing: border-box;
+  border: none;
+  display: block;
+}
+
+.messageCreate .messageInfo {
+  text-align: center;
+  float: none;
+  margin-bottom: -7px;
+}
+
+.messageCreate .message_noContent {
+  text-align: center;
+  padding: 8px 0 12px 10px;
+  width: 97%;
+  box-sizing: border-box;
+}
+
+.messageCreate .content_p {
+  margin-top: 4px;
+}
+
+.messageDestiny .message_noContent2 {
+  width: 93% !important;
+  margin: 3px 0 0 5px !important;
+}
+
+.messageDestiny .content_p {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.messageDestiny .message_destination {
+  width: 86% !important;
+  padding: 10px !important;
+}
+
+.messageDestiny .message_noContent{
+  margin: 5px auto;
+  width: 96%;
+  text-align: center;
+  display: block;
+}
+
+.messageDestiny .message_noContent .messageInfo{ width: 96%; }
+
+.miniBankMessage .messageInfo { float: none !important;}
+
+.miniBankMessage button.btn_submit {float: right !important;}
+
+/* popup SILENT */
+
+.infoSilent p {
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+
+.formRegistration .message_sucess{ width: 422px !important; }
