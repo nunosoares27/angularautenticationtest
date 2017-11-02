@@ -25,6 +25,12 @@ export class FilterPipe implements PipeTransform {
       if (input[i].first_name === searchText) {
         output.push(input[i]);
       }
+      if (input[i].last_name === searchText) {
+        output.push(input[i]);
+      }
+       if (input[i].gender === searchText) {
+        output.push(input[i]);
+      }
     }
     return output;
   }
