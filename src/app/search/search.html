@@ -1,10 +1,21 @@
 <div class="container">
-    <input [(ngModel)]="searchText" placeholder="search text goes here">
+
+<!-- filter by text in characters -->
+    <!--<input [(ngModel)]="filterText" placeholder="search text goes here">
 <ul>
-  <li *ngFor="let c of characters | filter : searchText">
+  <li *ngFor="let c of characters | filterByName : filterText">
     {{c}}
   </li>
-</ul>
+</ul>-->
 
+<input [(ngModel)]="filterText" placeholder="search text goes here">
+
+<ul>
+
+<li *ngFor="let d of fakeData | filterByName : filterText">
+    {{d.first_name}} {{d.last_name}} - {{d.gender}}
+  </li>
+
+</ul>
 
 </div>
