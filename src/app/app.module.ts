@@ -10,12 +10,15 @@ import { AppComponent } from './app.component';
 import {homeComponent} from './home/home.component';
 import { entrarComponent} from './entrar/entrar';
 import { registarComponent } from './registrar/registo';
+import { searchComponent } from './search/search';
 
 import {WebService} from './laravel.service';
+import { FilterPipe} from './filter.pipe';
+
 
 @NgModule({
   declarations: [
-    AppComponent, homeComponent,entrarComponent,registarComponent,
+    AppComponent, homeComponent,entrarComponent,registarComponent, searchComponent,FilterPipe,
   ],
   imports: [
     BrowserModule, HttpModule, JsonpModule, FormsModule, RouterModule.forRoot(rootRouterConfig),
