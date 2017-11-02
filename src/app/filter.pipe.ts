@@ -13,8 +13,6 @@ export class FilterPipe implements PipeTransform {
 //       return it.toLowerCase().includes(searchText);
 //     });
 //    }
-
-
  
   transform(input: any[], searchText: any[]){
     var output: any[] = [];
@@ -31,6 +29,7 @@ export class FilterPipe implements PipeTransform {
        if (input[i].gender === searchText) {
         output.push(input[i]);
       }
+    
     }
     return output;
   }

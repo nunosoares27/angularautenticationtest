@@ -6,7 +6,21 @@ import { Component } from '@angular/core';
   templateUrl: './search.html',
   styleUrls: ['./search.css']
 })
+
 export class searchComponent {
+
+isMale:boolean = false;
+isFemale:boolean = false;
+
+getMale(){
+  this.isFemale = false;
+  this.isMale = !this.isMale;
+}
+
+getFemale(){
+    this.isMale = false;
+    this.isFemale = !this.isFemale;
+}
 
 fakeData = [{
   "id": 1,
